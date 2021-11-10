@@ -81,9 +81,10 @@ def priceofitems(text):
 if __name__ == '__main__':
 
     #command line args
-    parser = argparse.ArgumentParser(description='Download info from ebay and convert it into JSON')
+    parser = argparse.ArgumentParser(description='Download info from ebay and convert it into JSON or CSV')
     parser.add_argument('search_term')
     parser.add_argument('--num_pages', default = 10)
+    parser.add_argument('--csv', action="store_true")
     args = parser.parse_args()
     print('args.search_term = ', args.search_term)
 
@@ -181,8 +182,11 @@ if __name__ == '__main__':
             # print('item dictionary length', len(items))
         
 
-
     #Create and load the Json file of the results of the search term
-    filename = args.search_term + '.json'
+    #Create and load the Json file of the results of the search term
+    if args.csv:
+        filename = args.search_term + '.csv'
+    else:
+        filename = args.search_term + '.json'
     with open (filename, 'w', encoding = 'ascii') as f:
         f.write(json.dumps(items))
