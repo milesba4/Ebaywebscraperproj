@@ -56,10 +56,16 @@ def priceofitems(text):
     99
     >>> priceofitems('$98.56')
     9856
+
+    >>> priceofitems('tap to see price')
+    0
+
     
     '''
 
     itemprice= ''
+    if '$' not in text:
+        return 0
     a_list= text.split()
     b_list= a_list[0]
     for char in b_list:
