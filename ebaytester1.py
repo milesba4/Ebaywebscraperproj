@@ -50,7 +50,7 @@ def priceofitems(text):
     '''
     Takes as input a str and returns the price of item
 
-    >>> priceofitems('$54.99')
+    >>> priceofitems('$54.99 to $79.99')
     5499
     >>> priceofitems('$0.99')
     99
@@ -60,7 +60,9 @@ def priceofitems(text):
     '''
 
     itemprice= ''
-    for char in text:
+    a_list= text.split()
+    b_list= a_list[0]
+    for char in b_list:
         if char in '1234567890':
             itemprice+= char
     return int(itemprice)
