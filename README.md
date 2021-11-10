@@ -41,3 +41,7 @@ if you want to extract the data of the search term: speaker, your input should b
 ```
 python3 ebay-dl.py 'speaker' --csv   
 ```
+
+
+#### Here is a [Link](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_03) to the course project
+
