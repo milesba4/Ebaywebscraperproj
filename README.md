@@ -1,6 +1,6 @@
 # Hw03
 # Ebay datascaper
-## In this project, I created a file that will take your inputed searchterm, collect the data from the first 10 pages of your search term, and download a dictionary of each item's Name, status, shipping price,item price, & number of items sold onto a json file or a csv file depending on what your input in the command line.  
+## In this project, I created a file that will take your inputed searchterm, collect the data from the first 10 pages of your search term, and download a dictionary of each item's Name, status, shipping price,item price, & number of items sold onto a json file or a csv file depending on what you input in the command line.  
 
 
 ### Json
