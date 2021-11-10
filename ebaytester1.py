@@ -66,7 +66,7 @@ def priceofitems(text):
         if char in '1234567890':
             itemprice+= char
     return int(itemprice)
-            
+   
 
 
     
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     #command line args
     parser = argparse.ArgumentParser(description='Download info from ebay and convert it into JSON')
     parser.add_argument('search_term')
-    parser.add_argument('--num_pages', default = 1)
+    parser.add_argument('--num_pages', default = 10)
     args = parser.parse_args()
     print('args.search_term = ', args.search_term)
 
