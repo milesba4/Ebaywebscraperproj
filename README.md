@@ -22,26 +22,5 @@ if you want to extract the data of the search term: hat, your input should be
 python3 ebay-dl.py 'hat'   
 ```
 
-### CSV
-
-if you want to extract the data of the search term: bike, your input should be
-
-```
-python3 ebay-dl.py 'bike' --csv
-```
-
-if you want to extract the data of the search term: basket ball, your input should be
-
-```
-python3 ebay-dl.py 'basket ball' --csv   
-```
-
-if you want to extract the data of the search term: speaker, your input should be
-
-```
-python3 ebay-dl.py 'speaker' --csv   
-```
-
-
 #### Here is a [Link](https://github.com/mikeizbicki/cmc-csci040/tree/2021fall/hw_03) to the course project
 
